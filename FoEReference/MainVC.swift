@@ -11,20 +11,18 @@ import UIKit
 class MainVC: UITableViewController {
     
     
-    //MARK: - Outlets
-    
-    
-    
     //MARK: - Variables
-    var mainTableEntries = [String]()
-    var ages = [Ages]()
-    var greatBuildings = [GreatBuildings]()
-    var worlds = [Worlds]()
+    var copiedMainTableEntries = [String]()
     
+    private var _gatherDataMain: GatherData!
     
-    //MARK: - Constants
-    
-    
+    var gatherDataMain: GatherData {
+        get {
+            return _gatherDataMain
+        } set {
+            _gatherDataMain = newValue
+        }
+    }
     
     //MARK: -
     override func viewDidLoad() {
@@ -33,21 +31,18 @@ class MainVC: UITableViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        getMainTableEntries()
-        parseAgesCSV()
-        parseGreatBuildingsCSV()
-        parseWorldsCSV()
+        copiedMainTableEntries = gatherDataMain.mainTableEntries
     }
     
     
     //MARK: - TableView
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mainTableEntries.count
+        return copiedMainTableEntries.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainCell", for: indexPath) as! MainCell
-        let mainTableEntry = mainTableEntries[indexPath.row]
+        let mainTableEntry = copiedMainTableEntries[indexPath.row]
         cell.mainCellLbl.text = mainTableEntry
         return cell
     }
@@ -82,88 +77,6 @@ class MainVC: UITableViewController {
             print("Did not segue")
         }
         
-    }
-    
-    
-    //MARK: - Obtain Data
-    func getMainTableEntries() {
-        mainTableEntries = [
-            "Worlds",
-            "Ages",
-            "Social",
-            "Great Buildings",
-            "Great Building Sniping",
-            "Guild Expeditions (GE)",
-            "Guild vs Guild (GVG)",
-            "Tavern"
-        ]
-    }
-    
-    func parseAgesCSV() {
-        let path = Bundle.main.path(forResource: "ages", ofType: "csv")!
-        
-        do {
-            
-            let csv = try CSV(contentsOfURL: path)
-            let rows = csv.rows
-            
-            for row in rows {
-                let ageID = Int(row["id"]!)!
-                let name = row["name"]!
-                let age = Ages(ageID: ageID, name: name)
-                ages.append(age)
-            }
-            
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        
-        //print(ages) // uncomment to debug
-    }
-    
-    func parseGreatBuildingsCSV() {
-        let path = Bundle.main.path(forResource: "greatbuildings", ofType: "csv")!
-        
-        do {
-            
-            let csv = try CSV(contentsOfURL: path)
-            let rows = csv.rows
-            
-            for row in rows {
-                let gbID = Int(row["id"]!)!
-                let name = row["name"]!
-                let gbAge = row["age"]!
-                let greatBuilding = GreatBuildings(gbID: gbID, name: name, gbAge: gbAge)
-                greatBuildings.append(greatBuilding)
-            }
-            
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        
-        //print(greatBuildings) // uncomment to debug
-    }
-    
-    func parseWorldsCSV() {
-        let path = Bundle.main.path(forResource: "worlds", ofType: "csv")!
-        
-        do {
-            
-            let csv = try CSV(contentsOfURL: path)
-            let rows = csv.rows
-            
-            for row in rows {
-                let worldID = Int(row["id"]!)!
-                let name = row["name"]!
-                let world = Worlds(worldID: worldID, name: name)
-                worlds.append(world)
-            }
-            
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-        
-        //print(worlds) // uncomment to debug
     }
 }
 
