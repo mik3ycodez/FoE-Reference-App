@@ -10,6 +10,20 @@ import UIKit
 
 class GreatBuildingsVC: UIViewController {
     
+    private var _greatBuilding: GreatBuildings!
     
+    var greatBuilding: GreatBuildings {
+        get {
+            return _greatBuilding
+        } set {
+            _greatBuilding = newValue
+        }
+    }
+    
+    override func viewDidLoad() {
+        //set ui objects
+        
+        self.navigationItem.title = "Great Buildings"
+    }
     
 }

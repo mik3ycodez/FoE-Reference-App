@@ -64,11 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				55741D301EF5AFB20031F8B6 /* FoEReference */,
-				55BAA9741EF71C3F0085BEC4 /* AppDelegate.swift */,
-				55BAA9881EF71C7B0085BEC4 /* MainCell.swift */,
-				55BAA9791EF71C530085BEC4 /* Assets.xcassets */,
 				55BAA97B1EF71C5F0085BEC4 /* LaunchScreen.storyboard */,
 				55BAA97D1EF71C5F0085BEC4 /* Main.storyboard */,
+				55BAA9791EF71C530085BEC4 /* Assets.xcassets */,
 				55BAA9871EF71C7B0085BEC4 /* Info.plist */,
 				55BAA9831EF71C7B0085BEC4 /* FoEReference.xcdatamodeld */,
 				55741D2F1EF5AFB20031F8B6 /* Products */,
@@ -86,6 +84,8 @@
 		55741D301EF5AFB20031F8B6 /* FoEReference */ = {
 			isa = PBXGroup;
 			children = (
+				55BAA9741EF71C3F0085BEC4 /* AppDelegate.swift */,
+				55BAA9881EF71C7B0085BEC4 /* MainCell.swift */,
 				55CB9E3F1EF6FF9F00F3D74F /* Model */,
 				55CB9E461EF7059200F3D74F /* View */,
 				55CB9E471EF7059700F3D74F /* Controller */,
@@ -137,8 +137,8 @@
 			children = (
 				55BAA9731EF71C3F0085BEC4 /* AgesVC.swift */,
 				55BAA9861EF71C7B0085BEC4 /* GreatBuildingsVC.swift */,
-				55BAA9891EF71C7B0085BEC4 /* MainVC.swift */,
 				55BAA98C1EF71C7B0085BEC4 /* WorldsVC.swift */,
+				55BAA9891EF71C7B0085BEC4 /* MainVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";

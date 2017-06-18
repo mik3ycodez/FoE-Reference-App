@@ -8,11 +8,11 @@
 
 import UIKit
 
-class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainVC: UITableViewController {
     
     
     //MARK: - Outlets
-    @IBOutlet weak var tableView: UITableView!
+    
     
     
     //MARK: - Variables
@@ -41,19 +41,47 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     //MARK: - TableView
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mainTableEntries.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainCell", for: indexPath) as! MainCell
         let mainTableEntry = mainTableEntries[indexPath.row]
         cell.mainCellLbl.text = mainTableEntry
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //do this when you select a row
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            print("SegueToWorldsVC")
+            self.performSegue(withIdentifier: "SegueToWorldsVC", sender: self)
+        case 1:
+            print("SegueToAgesVC")
+            self.performSegue(withIdentifier: "SegueToAgesVC", sender: self)
+        case 2:
+            print("SegueToSocialsVC")
+            self.performSegue(withIdentifier: "SegueToSocialsVC", sender: self)
+        case 3:
+            print("SegueToGreatBuildingsVC")
+            self.performSegue(withIdentifier: "SegueToGreatBuildingsVC", sender: self)
+        case 4:
+            print("SegueToGBSnipingsVC")
+            self.performSegue(withIdentifier: "SegueToGBSnipingsVC", sender: self)
+        case 5:
+            print("SeguesToGEsVC")
+            self.performSegue(withIdentifier: "SeguesToGEsVC", sender: self)
+        case 6:
+            print("SegueToGVGsVC")
+            self.performSegue(withIdentifier: "SegueToGVGsVC", sender: self)
+        case 7:
+            print("SegueToTavernsVS")
+            self.performSegue(withIdentifier: "SegueToTavernsVS", sender: self)
+        default:
+            print("Did not segue")
+        }
+        
     }
     
     
@@ -90,7 +118,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             print(err.debugDescription)
         }
         
-        print(ages)
+        //print(ages) // uncomment to debug
     }
     
     func parseGreatBuildingsCSV() {
@@ -113,7 +141,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             print(err.debugDescription)
         }
         
-        print(greatBuildings)
+        //print(greatBuildings) // uncomment to debug
     }
     
     func parseWorldsCSV() {
@@ -135,7 +163,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             print(err.debugDescription)
         }
         
-        print(worlds)
+        //print(worlds) // uncomment to debug
     }
 }
 

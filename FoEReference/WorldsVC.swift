@@ -10,6 +10,21 @@ import UIKit
 
 class WorldsVC: UIViewController {
     
+    private var _world: Worlds!
     
+    var world: Worlds {
+        get {
+            return _world
+        } set {
+            _world = newValue
+        }
+    }
+    
+    override func viewDidLoad() {
+        //set ui objects
+        
+        self.navigationItem.title = "Worlds"
+        
+    }
     
 }
