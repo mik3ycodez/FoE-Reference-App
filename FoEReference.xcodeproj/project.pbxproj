@@ -18,7 +18,7 @@
 		55BAA9901EF71C7B0085BEC4 /* greatbuildings.csv in Resources */ = {isa = PBXBuildFile; fileRef = 55BAA9841EF71C7B0085BEC4 /* greatbuildings.csv */; };
 		55BAA9911EF71C7B0085BEC4 /* GreatBuildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9851EF71C7B0085BEC4 /* GreatBuildings.swift */; };
 		55BAA9921EF71C7B0085BEC4 /* GreatBuildingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9861EF71C7B0085BEC4 /* GreatBuildingsVC.swift */; };
-		55BAA9941EF71C7B0085BEC4 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9881EF71C7B0085BEC4 /* MainCell.swift */; };
+		55BAA9941EF71C7B0085BEC4 /* TableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9881EF71C7B0085BEC4 /* TableCells.swift */; };
 		55BAA9951EF71C7B0085BEC4 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9891EF71C7B0085BEC4 /* MainVC.swift */; };
 		55BAA9961EF71C7B0085BEC4 /* worlds.csv in Resources */ = {isa = PBXBuildFile; fileRef = 55BAA98A1EF71C7B0085BEC4 /* worlds.csv */; };
 		55BAA9971EF71C7B0085BEC4 /* Worlds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA98B1EF71C7B0085BEC4 /* Worlds.swift */; };
@@ -43,7 +43,7 @@
 		55BAA9851EF71C7B0085BEC4 /* GreatBuildings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GreatBuildings.swift; path = FoEReference/GreatBuildings.swift; sourceTree = SOURCE_ROOT; };
 		55BAA9861EF71C7B0085BEC4 /* GreatBuildingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GreatBuildingsVC.swift; path = FoEReference/GreatBuildingsVC.swift; sourceTree = SOURCE_ROOT; };
 		55BAA9871EF71C7B0085BEC4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FoEReference/Info.plist; sourceTree = SOURCE_ROOT; };
-		55BAA9881EF71C7B0085BEC4 /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainCell.swift; path = FoEReference/MainCell.swift; sourceTree = SOURCE_ROOT; };
+		55BAA9881EF71C7B0085BEC4 /* TableCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableCells.swift; path = FoEReference/TableCells.swift; sourceTree = SOURCE_ROOT; };
 		55BAA9891EF71C7B0085BEC4 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainVC.swift; path = FoEReference/MainVC.swift; sourceTree = SOURCE_ROOT; };
 		55BAA98A1EF71C7B0085BEC4 /* worlds.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = worlds.csv; path = FoEReference/worlds.csv; sourceTree = SOURCE_ROOT; };
 		55BAA98B1EF71C7B0085BEC4 /* Worlds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Worlds.swift; path = FoEReference/Worlds.swift; sourceTree = SOURCE_ROOT; };
@@ -87,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				55BAA9741EF71C3F0085BEC4 /* AppDelegate.swift */,
-				55BAA9881EF71C7B0085BEC4 /* MainCell.swift */,
+				55BAA9881EF71C7B0085BEC4 /* TableCells.swift */,
 				55CB9E3F1EF6FF9F00F3D74F /* Model */,
 				55CB9E461EF7059200F3D74F /* View */,
 				55CB9E471EF7059700F3D74F /* Controller */,
@@ -234,7 +234,7 @@
 				55BAA9981EF71C7B0085BEC4 /* WorldsVC.swift in Sources */,
 				55BAA99D1EF732310085BEC4 /* GatherData.swift in Sources */,
 				55BAA9761EF71C3F0085BEC4 /* Ages.swift in Sources */,
-				55BAA9941EF71C7B0085BEC4 /* MainCell.swift in Sources */,
+				55BAA9941EF71C7B0085BEC4 /* TableCells.swift in Sources */,
 				55BAA9911EF71C7B0085BEC4 /* GreatBuildings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

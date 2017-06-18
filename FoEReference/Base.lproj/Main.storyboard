@@ -24,7 +24,7 @@
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </imageView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MainCell" rowHeight="75" id="pft-HA-NUY" customClass="MainCell" customModule="FoEReference" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MainCell" rowHeight="75" id="pft-HA-NUY" customClass="TableCells" customModule="FoEReference" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="235" width="414" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pft-HA-NUY" id="1Oi-LZ-FIZ">
@@ -98,12 +98,55 @@
                     <view key="view" contentMode="scaleToFill" id="Znm-TH-EyB">
                         <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="35e-ca-Ng7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorldCell" rowHeight="75" id="Ac2-bd-BmJ" customClass="TableCells" customModule="FoEReference" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ac2-bd-BmJ" id="hoD-SF-H6Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyq-ma-tLQ">
+                                                    <rect key="frame" x="18" y="24.000000000000004" width="378" height="27.333333333333339"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                                    <color key="textColor" red="0.96184664964675903" green="0.76038616895675659" blue="0.066859647631645203" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Cyq-ma-tLQ" firstAttribute="leading" secondItem="hoD-SF-H6Y" secondAttribute="leadingMargin" constant="10" id="OTB-78-wwi"/>
+                                                <constraint firstItem="Cyq-ma-tLQ" firstAttribute="centerX" secondItem="hoD-SF-H6Y" secondAttribute="centerX" id="Yii-Xp-hea"/>
+                                                <constraint firstItem="Cyq-ma-tLQ" firstAttribute="centerY" secondItem="hoD-SF-H6Y" secondAttribute="centerY" id="uP6-GJ-td6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="worldCellLbl" destination="Cyq-ma-tLQ" id="vtx-Ms-Tag"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="35e-ca-Ng7" firstAttribute="leading" secondItem="Znm-TH-EyB" secondAttribute="leading" id="Js9-1e-57Y"/>
+                            <constraint firstAttribute="trailing" secondItem="35e-ca-Ng7" secondAttribute="trailing" id="dgk-sm-EWh"/>
+                            <constraint firstItem="35e-ca-Ng7" firstAttribute="top" secondItem="1U6-Zv-G4h" secondAttribute="bottom" id="gip-Ph-hGB"/>
+                            <constraint firstItem="uq5-ZL-wuy" firstAttribute="top" secondItem="35e-ca-Ng7" secondAttribute="bottom" id="v8w-cW-U42"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="worldTableView" destination="35e-ca-Ng7" id="M2g-Pv-hRe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m0K-uL-r91" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="1560"/>
+            <point key="canvasLocation" x="160.86956521739131" y="1559.5108695652175"/>
         </scene>
         <!--AgesVC-->
         <scene sceneID="3ti-K0-ryH">

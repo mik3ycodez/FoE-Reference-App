@@ -12,17 +12,8 @@ class MainVC: UITableViewController {
     
     
     //MARK: - Variables
-    var copiedMainTableEntries = [String]()
+    var mainTableEntries = [String]()
     
-    private var _gatherDataMain: GatherData!
-    
-    var gatherDataMain: GatherData {
-        get {
-            return _gatherDataMain
-        } set {
-            _gatherDataMain = newValue
-        }
-    }
     
     //MARK: -
     override func viewDidLoad() {
@@ -31,18 +22,18 @@ class MainVC: UITableViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        copiedMainTableEntries = gatherDataMain.mainTableEntries
+        getMainTableEntries()
     }
     
     
     //MARK: - TableView
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return copiedMainTableEntries.count
+        return mainTableEntries.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MainCell", for: indexPath) as! MainCell
-        let mainTableEntry = copiedMainTableEntries[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MainCell", for: indexPath) as! TableCells
+        let mainTableEntry = mainTableEntries[indexPath.row]
         cell.mainCellLbl.text = mainTableEntry
         return cell
     }
@@ -78,5 +69,19 @@ class MainVC: UITableViewController {
         }
         
     }
+    
+    func getMainTableEntries() {
+        mainTableEntries = [
+            "Worlds",
+            "Ages",
+            "Social",
+            "Great Buildings",
+            "Great Building Sniping",
+            "Guild Expeditions (GE)",
+            "Guild vs Guild (GVG)",
+            "Tavern"
+        ]
+    }
+    
 }
 

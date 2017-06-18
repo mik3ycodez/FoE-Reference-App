@@ -1,5 +1,5 @@
 //
-//  MainCell.swift
+//  TableCells.swift
 //  FoEReference
 //
 //  Created by cbeuser on 6/18/17.
@@ -8,9 +8,10 @@
 
 import UIKit
 
-class MainCell: UITableViewCell {
+class TableCells: UITableViewCell {
     
     @IBOutlet weak var mainCellLbl: UILabel!
+    @IBOutlet weak var worldCellLbl: UILabel!
     
     
 }
