@@ -7,41 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55741D321EF5AFB20031F8B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55741D311EF5AFB20031F8B6 /* AppDelegate.swift */; };
-		55741D341EF5AFB20031F8B6 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55741D331EF5AFB20031F8B6 /* MainVC.swift */; };
-		55741D371EF5AFB20031F8B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55741D351EF5AFB20031F8B6 /* Main.storyboard */; };
-		55741D3A1EF5AFB20031F8B6 /* FoEReferrence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55741D381EF5AFB20031F8B6 /* FoEReferrence.xcdatamodeld */; };
-		55741D3C1EF5AFB20031F8B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55741D3B1EF5AFB20031F8B6 /* Assets.xcassets */; };
-		55741D3F1EF5AFB20031F8B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55741D3D1EF5AFB20031F8B6 /* LaunchScreen.storyboard */; };
-		55741D8B1EF5B4CD0031F8B6 /* foelogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 55741D8A1EF5B4CD0031F8B6 /* foelogo.png */; };
-		55CB9E311EF6E5C200F3D74F /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CB9E301EF6E5C200F3D74F /* MainCell.swift */; };
-		55CB9E331EF6F44400F3D74F /* ages.csv in Resources */ = {isa = PBXBuildFile; fileRef = 55CB9E321EF6F44400F3D74F /* ages.csv */; };
-		55CB9E351EF6F44D00F3D74F /* worlds.csv in Resources */ = {isa = PBXBuildFile; fileRef = 55CB9E341EF6F44D00F3D74F /* worlds.csv */; };
-		55CB9E3B1EF6FE4200F3D74F /* greatbuildings.csv in Resources */ = {isa = PBXBuildFile; fileRef = 55CB9E3A1EF6FE4200F3D74F /* greatbuildings.csv */; };
-		55CB9E3D1EF6FEA100F3D74F /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CB9E3C1EF6FEA100F3D74F /* csv.swift */; };
-		55CB9E411EF6FFA900F3D74F /* Ages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CB9E401EF6FFA900F3D74F /* Ages.swift */; };
-		55CB9E431EF702C400F3D74F /* GreatBuildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CB9E421EF702C400F3D74F /* GreatBuildings.swift */; };
-		55CB9E451EF704AA00F3D74F /* Worlds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CB9E441EF704AA00F3D74F /* Worlds.swift */; };
+		55BAA9751EF71C3F0085BEC4 /* ages.csv in Resources */ = {isa = PBXBuildFile; fileRef = 55BAA9711EF71C3F0085BEC4 /* ages.csv */; };
+		55BAA9761EF71C3F0085BEC4 /* Ages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9721EF71C3F0085BEC4 /* Ages.swift */; };
+		55BAA9771EF71C3F0085BEC4 /* AgesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9731EF71C3F0085BEC4 /* AgesVC.swift */; };
+		55BAA9781EF71C3F0085BEC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9741EF71C3F0085BEC4 /* AppDelegate.swift */; };
+		55BAA97F1EF71C5F0085BEC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55BAA97B1EF71C5F0085BEC4 /* LaunchScreen.storyboard */; };
+		55BAA9801EF71C5F0085BEC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55BAA97D1EF71C5F0085BEC4 /* Main.storyboard */; };
+		55BAA98D1EF71C7B0085BEC4 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9811EF71C7B0085BEC4 /* csv.swift */; };
+		55BAA98E1EF71C7B0085BEC4 /* foelogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 55BAA9821EF71C7B0085BEC4 /* foelogo.png */; };
+		55BAA9901EF71C7B0085BEC4 /* greatbuildings.csv in Resources */ = {isa = PBXBuildFile; fileRef = 55BAA9841EF71C7B0085BEC4 /* greatbuildings.csv */; };
+		55BAA9911EF71C7B0085BEC4 /* GreatBuildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9851EF71C7B0085BEC4 /* GreatBuildings.swift */; };
+		55BAA9921EF71C7B0085BEC4 /* GreatBuildingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9861EF71C7B0085BEC4 /* GreatBuildingsVC.swift */; };
+		55BAA9941EF71C7B0085BEC4 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9881EF71C7B0085BEC4 /* MainCell.swift */; };
+		55BAA9951EF71C7B0085BEC4 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9891EF71C7B0085BEC4 /* MainVC.swift */; };
+		55BAA9961EF71C7B0085BEC4 /* worlds.csv in Resources */ = {isa = PBXBuildFile; fileRef = 55BAA98A1EF71C7B0085BEC4 /* worlds.csv */; };
+		55BAA9971EF71C7B0085BEC4 /* Worlds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA98B1EF71C7B0085BEC4 /* Worlds.swift */; };
+		55BAA9981EF71C7B0085BEC4 /* WorldsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA98C1EF71C7B0085BEC4 /* WorldsVC.swift */; };
+		55BAA99A1EF71DD30085BEC4 /* FoEReference.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9831EF71C7B0085BEC4 /* FoEReference.xcdatamodeld */; };
+		55BAA99B1EF71F170085BEC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55BAA9791EF71C530085BEC4 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		55741D2E1EF5AFB20031F8B6 /* FoEReference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoEReference.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		55741D311EF5AFB20031F8B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55741D331EF5AFB20031F8B6 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		55741D361EF5AFB20031F8B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		55741D391EF5AFB20031F8B6 /* FoEReferrence.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoEReferrence.xcdatamodel; sourceTree = "<group>"; };
-		55741D3B1EF5AFB20031F8B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		55741D3E1EF5AFB20031F8B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		55741D401EF5AFB20031F8B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55741D8A1EF5B4CD0031F8B6 /* foelogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = foelogo.png; sourceTree = "<group>"; };
-		55CB9E301EF6E5C200F3D74F /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
-		55CB9E321EF6F44400F3D74F /* ages.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ages.csv; sourceTree = "<group>"; };
-		55CB9E341EF6F44D00F3D74F /* worlds.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = worlds.csv; sourceTree = "<group>"; };
-		55CB9E3A1EF6FE4200F3D74F /* greatbuildings.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = greatbuildings.csv; sourceTree = "<group>"; };
-		55CB9E3C1EF6FEA100F3D74F /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
-		55CB9E401EF6FFA900F3D74F /* Ages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ages.swift; sourceTree = "<group>"; };
-		55CB9E421EF702C400F3D74F /* GreatBuildings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreatBuildings.swift; sourceTree = "<group>"; };
-		55CB9E441EF704AA00F3D74F /* Worlds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Worlds.swift; sourceTree = "<group>"; };
+		55BAA9711EF71C3F0085BEC4 /* ages.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ages.csv; path = FoEReference/ages.csv; sourceTree = SOURCE_ROOT; };
+		55BAA9721EF71C3F0085BEC4 /* Ages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ages.swift; path = FoEReference/Ages.swift; sourceTree = SOURCE_ROOT; };
+		55BAA9731EF71C3F0085BEC4 /* AgesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AgesVC.swift; path = FoEReference/AgesVC.swift; sourceTree = SOURCE_ROOT; };
+		55BAA9741EF71C3F0085BEC4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FoEReference/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		55BAA9791EF71C530085BEC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = FoEReference/Assets.xcassets; sourceTree = "<group>"; };
+		55BAA97C1EF71C5F0085BEC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FoEReference/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55BAA97E1EF71C5F0085BEC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FoEReference/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55BAA9811EF71C7B0085BEC4 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = csv.swift; path = FoEReference/csv.swift; sourceTree = SOURCE_ROOT; };
+		55BAA9821EF71C7B0085BEC4 /* foelogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = foelogo.png; path = FoEReference/foelogo.png; sourceTree = SOURCE_ROOT; };
+		55BAA9841EF71C7B0085BEC4 /* greatbuildings.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = greatbuildings.csv; path = FoEReference/greatbuildings.csv; sourceTree = SOURCE_ROOT; };
+		55BAA9851EF71C7B0085BEC4 /* GreatBuildings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GreatBuildings.swift; path = FoEReference/GreatBuildings.swift; sourceTree = SOURCE_ROOT; };
+		55BAA9861EF71C7B0085BEC4 /* GreatBuildingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GreatBuildingsVC.swift; path = FoEReference/GreatBuildingsVC.swift; sourceTree = SOURCE_ROOT; };
+		55BAA9871EF71C7B0085BEC4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FoEReference/Info.plist; sourceTree = SOURCE_ROOT; };
+		55BAA9881EF71C7B0085BEC4 /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainCell.swift; path = FoEReference/MainCell.swift; sourceTree = SOURCE_ROOT; };
+		55BAA9891EF71C7B0085BEC4 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainVC.swift; path = FoEReference/MainVC.swift; sourceTree = SOURCE_ROOT; };
+		55BAA98A1EF71C7B0085BEC4 /* worlds.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = worlds.csv; path = FoEReference/worlds.csv; sourceTree = SOURCE_ROOT; };
+		55BAA98B1EF71C7B0085BEC4 /* Worlds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Worlds.swift; path = FoEReference/Worlds.swift; sourceTree = SOURCE_ROOT; };
+		55BAA98C1EF71C7B0085BEC4 /* WorldsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorldsVC.swift; path = FoEReference/WorldsVC.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +64,13 @@
 			isa = PBXGroup;
 			children = (
 				55741D301EF5AFB20031F8B6 /* FoEReference */,
+				55BAA9741EF71C3F0085BEC4 /* AppDelegate.swift */,
+				55BAA9881EF71C7B0085BEC4 /* MainCell.swift */,
+				55BAA9791EF71C530085BEC4 /* Assets.xcassets */,
+				55BAA97B1EF71C5F0085BEC4 /* LaunchScreen.storyboard */,
+				55BAA97D1EF71C5F0085BEC4 /* Main.storyboard */,
+				55BAA9871EF71C7B0085BEC4 /* Info.plist */,
+				55BAA9831EF71C7B0085BEC4 /* FoEReference.xcdatamodeld */,
 				55741D2F1EF5AFB20031F8B6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,13 +91,6 @@
 				55CB9E471EF7059700F3D74F /* Controller */,
 				55CB9E3E1EF6FEAC00F3D74F /* Util */,
 				55741D461EF5AFED0031F8B6 /* Resources */,
-				55741D311EF5AFB20031F8B6 /* AppDelegate.swift */,
-				55CB9E301EF6E5C200F3D74F /* MainCell.swift */,
-				55741D351EF5AFB20031F8B6 /* Main.storyboard */,
-				55741D3B1EF5AFB20031F8B6 /* Assets.xcassets */,
-				55741D3D1EF5AFB20031F8B6 /* LaunchScreen.storyboard */,
-				55741D401EF5AFB20031F8B6 /* Info.plist */,
-				55741D381EF5AFB20031F8B6 /* FoEReferrence.xcdatamodeld */,
 			);
 			name = FoEReference;
 			path = FoEReferrence;
@@ -94,10 +99,10 @@
 		55741D461EF5AFED0031F8B6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				55CB9E321EF6F44400F3D74F /* ages.csv */,
-				55CB9E3A1EF6FE4200F3D74F /* greatbuildings.csv */,
-				55CB9E341EF6F44D00F3D74F /* worlds.csv */,
-				55741D8A1EF5B4CD0031F8B6 /* foelogo.png */,
+				55BAA9821EF71C7B0085BEC4 /* foelogo.png */,
+				55BAA9711EF71C3F0085BEC4 /* ages.csv */,
+				55BAA9841EF71C7B0085BEC4 /* greatbuildings.csv */,
+				55BAA98A1EF71C7B0085BEC4 /* worlds.csv */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -105,7 +110,7 @@
 		55CB9E3E1EF6FEAC00F3D74F /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				55CB9E3C1EF6FEA100F3D74F /* csv.swift */,
+				55BAA9811EF71C7B0085BEC4 /* csv.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -113,9 +118,9 @@
 		55CB9E3F1EF6FF9F00F3D74F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				55CB9E401EF6FFA900F3D74F /* Ages.swift */,
-				55CB9E421EF702C400F3D74F /* GreatBuildings.swift */,
-				55CB9E441EF704AA00F3D74F /* Worlds.swift */,
+				55BAA9721EF71C3F0085BEC4 /* Ages.swift */,
+				55BAA9851EF71C7B0085BEC4 /* GreatBuildings.swift */,
+				55BAA98B1EF71C7B0085BEC4 /* Worlds.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -130,7 +135,10 @@
 		55CB9E471EF7059700F3D74F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				55741D331EF5AFB20031F8B6 /* MainVC.swift */,
+				55BAA9731EF71C3F0085BEC4 /* AgesVC.swift */,
+				55BAA9861EF71C7B0085BEC4 /* GreatBuildingsVC.swift */,
+				55BAA9891EF71C7B0085BEC4 /* MainVC.swift */,
+				55BAA98C1EF71C7B0085BEC4 /* WorldsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 					55741D2D1EF5AFB20031F8B6 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = TT9W6D3N85;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -195,13 +204,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55741D3F1EF5AFB20031F8B6 /* LaunchScreen.storyboard in Resources */,
-				55CB9E331EF6F44400F3D74F /* ages.csv in Resources */,
-				55CB9E3B1EF6FE4200F3D74F /* greatbuildings.csv in Resources */,
-				55741D8B1EF5B4CD0031F8B6 /* foelogo.png in Resources */,
-				55741D3C1EF5AFB20031F8B6 /* Assets.xcassets in Resources */,
-				55CB9E351EF6F44D00F3D74F /* worlds.csv in Resources */,
-				55741D371EF5AFB20031F8B6 /* Main.storyboard in Resources */,
+				55BAA98E1EF71C7B0085BEC4 /* foelogo.png in Resources */,
+				55BAA97F1EF71C5F0085BEC4 /* LaunchScreen.storyboard in Resources */,
+				55BAA9751EF71C3F0085BEC4 /* ages.csv in Resources */,
+				55BAA9901EF71C7B0085BEC4 /* greatbuildings.csv in Resources */,
+				55BAA99B1EF71F170085BEC4 /* Assets.xcassets in Resources */,
+				55BAA9801EF71C5F0085BEC4 /* Main.storyboard in Resources */,
+				55BAA9961EF71C7B0085BEC4 /* worlds.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,34 +221,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55741D341EF5AFB20031F8B6 /* MainVC.swift in Sources */,
-				55741D3A1EF5AFB20031F8B6 /* FoEReferrence.xcdatamodeld in Sources */,
-				55CB9E451EF704AA00F3D74F /* Worlds.swift in Sources */,
-				55CB9E311EF6E5C200F3D74F /* MainCell.swift in Sources */,
-				55741D321EF5AFB20031F8B6 /* AppDelegate.swift in Sources */,
-				55CB9E3D1EF6FEA100F3D74F /* csv.swift in Sources */,
-				55CB9E411EF6FFA900F3D74F /* Ages.swift in Sources */,
-				55CB9E431EF702C400F3D74F /* GreatBuildings.swift in Sources */,
+				55BAA9921EF71C7B0085BEC4 /* GreatBuildingsVC.swift in Sources */,
+				55BAA98D1EF71C7B0085BEC4 /* csv.swift in Sources */,
+				55BAA9781EF71C3F0085BEC4 /* AppDelegate.swift in Sources */,
+				55BAA99A1EF71DD30085BEC4 /* FoEReference.xcdatamodeld in Sources */,
+				55BAA9971EF71C7B0085BEC4 /* Worlds.swift in Sources */,
+				55BAA9951EF71C7B0085BEC4 /* MainVC.swift in Sources */,
+				55BAA9771EF71C3F0085BEC4 /* AgesVC.swift in Sources */,
+				55BAA9981EF71C7B0085BEC4 /* WorldsVC.swift in Sources */,
+				55BAA9761EF71C3F0085BEC4 /* Ages.swift in Sources */,
+				55BAA9941EF71C7B0085BEC4 /* MainCell.swift in Sources */,
+				55BAA9911EF71C7B0085BEC4 /* GreatBuildings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		55741D351EF5AFB20031F8B6 /* Main.storyboard */ = {
+		55BAA97B1EF71C5F0085BEC4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				55741D361EF5AFB20031F8B6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		55741D3D1EF5AFB20031F8B6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				55741D3E1EF5AFB20031F8B6 /* Base */,
+				55BAA97C1EF71C5F0085BEC4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		55BAA97D1EF71C5F0085BEC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55BAA97E1EF71C5F0085BEC4 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -344,11 +356,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = TT9W6D3N85;
-				INFOPLIST_FILE = FoEReferrence/Info.plist;
+				INFOPLIST_FILE = FoEReference/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WhatDoesThisDo.FoEReference;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -357,8 +371,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = TT9W6D3N85;
-				INFOPLIST_FILE = FoEReferrence/Info.plist;
+				INFOPLIST_FILE = FoEReference/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.WhatDoesThisDo.FoEReference;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -390,13 +405,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		55741D381EF5AFB20031F8B6 /* FoEReferrence.xcdatamodeld */ = {
+		55BAA9831EF71C7B0085BEC4 /* FoEReference.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				55741D391EF5AFB20031F8B6 /* FoEReferrence.xcdatamodel */,
 			);
-			currentVersion = 55741D391EF5AFB20031F8B6 /* FoEReferrence.xcdatamodel */;
-			path = FoEReferrence.xcdatamodeld;
+			name = FoEReference.xcdatamodeld;
+			path = FoEReference/FoEReference.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
