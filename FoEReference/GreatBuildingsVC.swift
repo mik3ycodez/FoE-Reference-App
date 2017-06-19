@@ -10,34 +10,29 @@ import UIKit
 
 class GreatBuildingsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var greatBuildings = [GreatBuildings]()
-    //var greatBuildingsDict: Dictionary<Int, (String, String)>
+    @IBOutlet weak var gbTableView: UITableView!
     
-    
-    private var _greatBuilding: GreatBuildings!
-    var greatBuilding: GreatBuildings {
-        get {
-            return _greatBuilding
-        } set {
-            _greatBuilding = newValue
-        }
-    }
+    var gbIDs = [String]()
+    var gbNames = [String]()
+    var gbAges = [String]()
     
     override func viewDidLoad() {
         //set ui objects
         
+        gbTableView.delegate = self
+        gbTableView.dataSource = self
+        
         self.navigationItem.title = "Great Buildings"
-        parseGreatBuildingsCSV()
+        parseGBCSVWithoutCSVFile()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return greatBuildings.count
+        return gbNames.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "GBCell", for: indexPath) as! TableCells
-        //let gbTableEntry = greatBuildings[indexPath.row]
-        cell.gbCellLbl.text = "place holder" // "place holder" should be gbTableEntry
+        cell.gbCellLbl.text = gbNames[indexPath.row]
         return cell
     }
     
@@ -45,30 +40,34 @@ class GreatBuildingsVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         
     }
-    
-    func parseGreatBuildingsCSV() {
-        let path = Bundle.main.path(forResource: "greatbuildings", ofType: "csv")!
+
+    func parseGBCSVWithoutCSVFile() {
         
-        do {
-            
-            let csv = try CSV(contentsOfURL: path)
-            let rows = csv.rows
-            
-            for row in rows {
-                let gbID = Int(row["id"]!)!
-                let name = row["name"]!
-                let gbAge = row["age"]!
-                //greatBuildingsDict[gbID] = name
-                let greatBuilding = GreatBuildings(gbID: gbID, name: name, gbAge: gbAge)
-                greatBuildings.append(greatBuilding)
+        if let greatBuildingFilePath = Bundle.main.path(forResource: "greatbuildings", ofType: "csv") {
+            if let gBContents = try? String(contentsOfFile: greatBuildingFilePath) {
+                let lines = gBContents.components(separatedBy: "\n")
+                
+                for (index, line) in lines.enumerated() {
+                    
+                    if index >= 1 && index < lines.count - 1 {
+                        let parts = line.components(separatedBy: ",")
+                        let id = parts[0]
+                        let name = parts[1]
+                        let age = parts[2]
+                        
+                        let fixedAge = age.replacingOccurrences(of: "\r", with: "")
+                        
+                        gbIDs.append(id)
+                        gbNames.append(name)
+                        gbAges.append(fixedAge)
+                    }
+                    
+
+                }
             }
-            
-        } catch let err as NSError {
-            print(err.debugDescription)
         }
-        
-        //print(greatBuildingsDict)
-        //print(greatBuildings) // uncomment to debug
+//        print(gbIDs)
+//        print(gbNames)
+//        print(gbAges)
     }
-    
 }
