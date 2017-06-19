@@ -80,12 +80,52 @@
                     <view key="view" contentMode="scaleToFill" id="GU1-uR-pPV">
                         <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HGy-Bl-bvB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GBCell" rowHeight="75" id="ekA-ev-dk9" customClass="TableCells" customModule="FoEReference" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ekA-ev-dk9" id="Tbf-zN-e0f">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYb-ek-XJb">
+                                                    <rect key="frame" x="18" y="24.000000000000004" width="378" height="27.333333333333339"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                                    <color key="textColor" red="0.96184664964675903" green="0.76038616895675659" blue="0.066859647631645203" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dYb-ek-XJb" firstAttribute="centerX" secondItem="Tbf-zN-e0f" secondAttribute="centerX" id="19w-iN-DXa"/>
+                                                <constraint firstItem="dYb-ek-XJb" firstAttribute="leading" secondItem="Tbf-zN-e0f" secondAttribute="leadingMargin" constant="10" id="BVk-xU-usB"/>
+                                                <constraint firstItem="dYb-ek-XJb" firstAttribute="centerY" secondItem="Tbf-zN-e0f" secondAttribute="centerY" id="rq8-sg-zRK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="gbCellLbl" destination="dYb-ek-XJb" id="YZE-IJ-xj5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dWZ-3E-5yY" firstAttribute="top" secondItem="HGy-Bl-bvB" secondAttribute="bottom" id="BIY-Tq-FfI"/>
+                            <constraint firstItem="HGy-Bl-bvB" firstAttribute="leading" secondItem="GU1-uR-pPV" secondAttribute="leading" id="cNj-y1-5Jn"/>
+                            <constraint firstAttribute="trailing" secondItem="HGy-Bl-bvB" secondAttribute="trailing" id="kDE-qt-cdA"/>
+                            <constraint firstItem="HGy-Bl-bvB" firstAttribute="top" secondItem="6Zg-XE-Obf" secondAttribute="bottom" id="onU-85-Mky"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHC-02-PgD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1546" y="1560"/>
+            <point key="canvasLocation" x="1544.9275362318842" y="1559.5108695652175"/>
         </scene>
         <!--WorldsVC-->
         <scene sceneID="hrf-Y7-IAk">
@@ -99,9 +139,9 @@
                         <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="35e-ca-Ng7">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="35e-ca-Ng7">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorldCell" rowHeight="75" id="Ac2-bd-BmJ" customClass="TableCells" customModule="FoEReference" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="75"/>

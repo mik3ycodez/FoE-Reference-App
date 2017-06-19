@@ -11,6 +11,8 @@ import UIKit
 class GreatBuildingsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var greatBuildings = [GreatBuildings]()
+    //var greatBuildingsDict: Dictionary<Int, (String, String)>
+    
     
     private var _greatBuilding: GreatBuildings!
     var greatBuilding: GreatBuildings {
@@ -33,9 +35,9 @@ class GreatBuildingsVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MainCell", for: indexPath) as! TableCells
+        let cell = tableView.dequeueReusableCell(withIdentifier: "GBCell", for: indexPath) as! TableCells
         //let gbTableEntry = greatBuildings[indexPath.row]
-        //cell.mainCellLbl.text = "place holder" // "place holder" should be gbTableEntry
+        cell.gbCellLbl.text = "place holder" // "place holder" should be gbTableEntry
         return cell
     }
     
@@ -56,6 +58,7 @@ class GreatBuildingsVC: UIViewController, UITableViewDelegate, UITableViewDataSo
                 let gbID = Int(row["id"]!)!
                 let name = row["name"]!
                 let gbAge = row["age"]!
+                //greatBuildingsDict[gbID] = name
                 let greatBuilding = GreatBuildings(gbID: gbID, name: name, gbAge: gbAge)
                 greatBuildings.append(greatBuilding)
             }
@@ -64,6 +67,7 @@ class GreatBuildingsVC: UIViewController, UITableViewDelegate, UITableViewDataSo
             print(err.debugDescription)
         }
         
+        //print(greatBuildingsDict)
         //print(greatBuildings) // uncomment to debug
     }
     
