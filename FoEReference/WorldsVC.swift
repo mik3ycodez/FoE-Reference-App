@@ -58,7 +58,7 @@ class WorldsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             print(err.debugDescription)
         }
         
-        print(worldsDict)
+        //print(worldsDict)
 
     }
     
