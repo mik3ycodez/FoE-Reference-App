@@ -15,7 +15,7 @@ class MainVC: UITableViewController {
     var mainTableEntries = [String]()
     
     
-    //MARK: -
+    //MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         

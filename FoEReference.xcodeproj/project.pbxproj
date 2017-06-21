@@ -25,6 +25,7 @@
 		55BAA99A1EF71DD30085BEC4 /* FoEReference.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9831EF71C7B0085BEC4 /* FoEReference.xcdatamodeld */; };
 		55BAA99B1EF71F170085BEC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55BAA9791EF71C530085BEC4 /* Assets.xcassets */; };
 		55BAA99D1EF732310085BEC4 /* GatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA99C1EF732310085BEC4 /* GatherData.swift */; };
+		55BAA99F1EF9D5300085BEC4 /* GBDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA99E1EF9D5300085BEC4 /* GBDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		55BAA98A1EF71C7B0085BEC4 /* worlds.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = worlds.csv; path = FoEReference/worlds.csv; sourceTree = SOURCE_ROOT; };
 		55BAA98C1EF71C7B0085BEC4 /* WorldsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorldsVC.swift; path = FoEReference/WorldsVC.swift; sourceTree = SOURCE_ROOT; };
 		55BAA99C1EF732310085BEC4 /* GatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GatherData.swift; sourceTree = SOURCE_ROOT; };
+		55BAA99E1EF9D5300085BEC4 /* GBDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBDetailsVC.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				55BAA9861EF71C7B0085BEC4 /* GreatBuildingsVC.swift */,
 				55BAA98C1EF71C7B0085BEC4 /* WorldsVC.swift */,
 				55BAA9891EF71C7B0085BEC4 /* MainVC.swift */,
+				55BAA99E1EF9D5300085BEC4 /* GBDetailsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				55BAA98D1EF71C7B0085BEC4 /* csv.swift in Sources */,
 				55BAA9781EF71C3F0085BEC4 /* AppDelegate.swift in Sources */,
 				55BAA99A1EF71DD30085BEC4 /* FoEReference.xcdatamodeld in Sources */,
+				55BAA99F1EF9D5300085BEC4 /* GBDetailsVC.swift in Sources */,
 				55BAA9951EF71C7B0085BEC4 /* MainVC.swift in Sources */,
 				55BAA9771EF71C3F0085BEC4 /* AgesVC.swift in Sources */,
 				55BAA9981EF71C7B0085BEC4 /* WorldsVC.swift in Sources */,

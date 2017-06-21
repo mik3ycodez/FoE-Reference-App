@@ -10,29 +10,32 @@ import UIKit
 
 class GreatBuildingsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    //MARK: - Outlets
     @IBOutlet weak var gbTableView: UITableView!
     
-    var gbIDs = [String]()
-    var gbNames = [String]()
-    var gbAges = [String]()
     
+    //MARK: - Variables
+    var greatBuilding: GreatBuildings!
+    
+    
+    //MARK: - ViewDidLoad
     override func viewDidLoad() {
-        //set ui objects
         
         gbTableView.delegate = self
         gbTableView.dataSource = self
         
         self.navigationItem.title = "Great Buildings"
-        parseGBCSVWithoutCSVFile()
     }
     
+    
+    //MARK: - TableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return gbNames.count
+        return greatBuilding.gbNames.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "GBCell", for: indexPath) as! TableCells
-        cell.gbCellLbl.text = gbNames[indexPath.row]
+        cell.gbCellLbl.text = greatBuilding.gbNames[indexPath.row]
         return cell
     }
     
@@ -40,34 +43,15 @@ class GreatBuildingsVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         
     }
-
-    func parseGBCSVWithoutCSVFile() {
-        
-        if let greatBuildingFilePath = Bundle.main.path(forResource: "greatbuildings", ofType: "csv") {
-            if let gBContents = try? String(contentsOfFile: greatBuildingFilePath) {
-                let lines = gBContents.components(separatedBy: "\n")
-                
-                for (index, line) in lines.enumerated() {
-                    
-                    if index >= 1 && index < lines.count - 1 {
-                        let parts = line.components(separatedBy: ",")
-                        let id = parts[0]
-                        let name = parts[1]
-                        let age = parts[2]
-                        
-                        let fixedAge = age.replacingOccurrences(of: "\r", with: "")
-                        
-                        gbIDs.append(id)
-                        gbNames.append(name)
-                        gbAges.append(fixedAge)
-                    }
-                    
-
-                }
+    
+    
+    //MARK: - Segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? GBDetailsVC {
+            if let gb = sender as? GreatBuildings {
+                destination.greatBuilding = gb
             }
         }
-//        print(gbIDs)
-//        print(gbNames)
-//        print(gbAges)
     }
+    
 }
