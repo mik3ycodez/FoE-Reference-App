@@ -25,6 +25,8 @@
 		55BAA99F1EF9D5300085BEC4 /* GBDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA99E1EF9D5300085BEC4 /* GBDetailsVC.swift */; };
 		55BAA9A51EFC95420085BEC4 /* GBSnipingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9A41EFC95420085BEC4 /* GBSnipingVC.swift */; };
 		55BAA9A71EFCA2F50085BEC4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9A61EFCA2F50085BEC4 /* CustomButton.swift */; };
+		55BAA9AB1EFCCBEC0085BEC4 /* red_fabric_background2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55BAA9AA1EFCCBEC0085BEC4 /* red_fabric_background2.jpg */; };
+		55BAA9AD1EFCCDA10085BEC4 /* foe_background2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 55BAA9AC1EFCCDA10085BEC4 /* foe_background2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		55BAA99E1EF9D5300085BEC4 /* GBDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBDetailsVC.swift; sourceTree = SOURCE_ROOT; };
 		55BAA9A41EFC95420085BEC4 /* GBSnipingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBSnipingVC.swift; sourceTree = SOURCE_ROOT; };
 		55BAA9A61EFCA2F50085BEC4 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = SOURCE_ROOT; };
+		55BAA9AA1EFCCBEC0085BEC4 /* red_fabric_background2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = red_fabric_background2.jpg; sourceTree = SOURCE_ROOT; };
+		55BAA9AC1EFCCDA10085BEC4 /* foe_background2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = foe_background2.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				55BAA9821EF71C7B0085BEC4 /* foelogo.png */,
+				55BAA9AC1EFCCDA10085BEC4 /* foe_background2.jpg */,
+				55BAA9AA1EFCCBEC0085BEC4 /* red_fabric_background2.jpg */,
 				55BAA9711EF71C3F0085BEC4 /* ages.csv */,
 				55BAA9841EF71C7B0085BEC4 /* greatbuildings.csv */,
 				55BAA98A1EF71C7B0085BEC4 /* worlds.csv */,
@@ -207,9 +213,11 @@
 				55BAA98E1EF71C7B0085BEC4 /* foelogo.png in Resources */,
 				55BAA97F1EF71C5F0085BEC4 /* LaunchScreen.storyboard in Resources */,
 				55BAA9751EF71C3F0085BEC4 /* ages.csv in Resources */,
+				55BAA9AB1EFCCBEC0085BEC4 /* red_fabric_background2.jpg in Resources */,
 				55BAA9901EF71C7B0085BEC4 /* greatbuildings.csv in Resources */,
 				55BAA99B1EF71F170085BEC4 /* Assets.xcassets in Resources */,
 				55BAA9801EF71C5F0085BEC4 /* Main.storyboard in Resources */,
+				55BAA9AD1EFCCDA10085BEC4 /* foe_background2.jpg in Resources */,
 				55BAA9961EF71C7B0085BEC4 /* worlds.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

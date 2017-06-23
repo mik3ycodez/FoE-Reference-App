@@ -22,9 +22,24 @@ class MainVC: UITableViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
+        tableView.backgroundView = UIImageView(image: UIImage(named: "red_fabric_background2.jpg"))
+        
+        
         getMainTableEntries()
     }
     
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y <= 0 {
+            scrollView.contentOffset = CGPoint.zero
+        }
+    }
+    
+//    scrollViewDidScroll:(UIScrollView *)scrollView
+//    {
+//    if (scrollView.contentOffset.y<=0) {
+//    scrollView.contentOffset = CGPointZero;
+//    }
+//    }
     
     //MARK: - TableView
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

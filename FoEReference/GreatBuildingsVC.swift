@@ -29,7 +29,8 @@ class GreatBuildingsVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         gbTableView.delegate = self
         gbTableView.dataSource = self
         
-        self.navigationItem.title = "Great Buildings"
+        gbTableView.backgroundView = UIImageView(image: UIImage(named: "red_fabric_background2.jpg"))
+        self.navigationItem.title = "GREAT BUILDINGS"
     }
     
     
