@@ -30,6 +30,7 @@ class GBSnipingVC: UIViewController {
     //MARK: -
     override func viewDidLoad() {
         
+        self.hideKeyboard()
     }
     
     func showErrorMessage(_ errorTitle: String, _ errorMessage: String) {
@@ -91,5 +92,22 @@ class GBSnipingVC: UIViewController {
         
         return stringResult
         
+    }
+}
+
+extension UIViewController
+{
+    func hideKeyboard()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(UIViewController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard()
+    {
+        view.endEditing(true)
     }
 }
