@@ -20,13 +20,12 @@ class AgesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var ageSupplies = [String]()
     
     override func viewDidLoad() {
-        //set ui objects
+        parseAgesCSVWithoutCSVFile()
         
         ageTableView.delegate = self
         ageTableView.dataSource = self
         
         self.navigationItem.title = "Ages"
-        parseAgesCSVWithoutCSVFile()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -14,14 +14,14 @@ class GBDetailsVC: UIViewController{
     @IBOutlet weak var thumbImg: UIImageView!
     @IBOutlet weak var nameLbl: UILabel!
     
-    private var _greatBuilding: GreatBuildings!
+    var indexPassed: Int = 0
+    var gbDetailIDs = [String]()
+    var gbDetailNames = [String]()
+    var gbDetailAges = [String]()
     
-    var greatBuilding: GreatBuildings {
-        get {
-            return _greatBuilding
-        } set {
-            _greatBuilding = newValue
-        }
+    override func viewDidLoad() {
+        thumbImg.image = UIImage(named: "\(indexPassed)")
+        nameLbl.text = gbDetailNames[indexPassed - 1]
     }
     
     
