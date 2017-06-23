@@ -20,6 +20,8 @@ class GBDetailsVC: UIViewController{
     var gbDetailAges = [String]()
     
     override func viewDidLoad() {
+        self.navigationItem.title = "\(gbDetailNames[indexPassed - 1])"
+        self.navigationItem.leftBarButtonItem?.title = "Back"
         thumbImg.image = UIImage(named: "\(indexPassed)")
         nameLbl.text = gbDetailNames[indexPassed - 1]
     }

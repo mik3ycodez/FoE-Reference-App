@@ -23,6 +23,8 @@
 		55BAA99A1EF71DD30085BEC4 /* FoEReference.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9831EF71C7B0085BEC4 /* FoEReference.xcdatamodeld */; };
 		55BAA99B1EF71F170085BEC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55BAA9791EF71C530085BEC4 /* Assets.xcassets */; };
 		55BAA99F1EF9D5300085BEC4 /* GBDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA99E1EF9D5300085BEC4 /* GBDetailsVC.swift */; };
+		55BAA9A51EFC95420085BEC4 /* GBSnipingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9A41EFC95420085BEC4 /* GBSnipingVC.swift */; };
+		55BAA9A71EFCA2F50085BEC4 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BAA9A61EFCA2F50085BEC4 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		55BAA98A1EF71C7B0085BEC4 /* worlds.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = worlds.csv; path = FoEReference/worlds.csv; sourceTree = SOURCE_ROOT; };
 		55BAA98C1EF71C7B0085BEC4 /* WorldsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorldsVC.swift; path = FoEReference/WorldsVC.swift; sourceTree = SOURCE_ROOT; };
 		55BAA99E1EF9D5300085BEC4 /* GBDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBDetailsVC.swift; sourceTree = SOURCE_ROOT; };
+		55BAA9A41EFC95420085BEC4 /* GBSnipingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBSnipingVC.swift; sourceTree = SOURCE_ROOT; };
+		55BAA9A61EFCA2F50085BEC4 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 		55CB9E461EF7059200F3D74F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				55BAA9A61EFCA2F50085BEC4 /* CustomButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -130,9 +135,10 @@
 			children = (
 				55BAA9731EF71C3F0085BEC4 /* AgesVC.swift */,
 				55BAA9861EF71C7B0085BEC4 /* GreatBuildingsVC.swift */,
+				55BAA99E1EF9D5300085BEC4 /* GBDetailsVC.swift */,
+				55BAA9A41EFC95420085BEC4 /* GBSnipingVC.swift */,
 				55BAA98C1EF71C7B0085BEC4 /* WorldsVC.swift */,
 				55BAA9891EF71C7B0085BEC4 /* MainVC.swift */,
-				55BAA99E1EF9D5300085BEC4 /* GBDetailsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -219,8 +225,10 @@
 				55BAA98D1EF71C7B0085BEC4 /* csv.swift in Sources */,
 				55BAA9781EF71C3F0085BEC4 /* AppDelegate.swift in Sources */,
 				55BAA99A1EF71DD30085BEC4 /* FoEReference.xcdatamodeld in Sources */,
+				55BAA9A51EFC95420085BEC4 /* GBSnipingVC.swift in Sources */,
 				55BAA99F1EF9D5300085BEC4 /* GBDetailsVC.swift in Sources */,
 				55BAA9951EF71C7B0085BEC4 /* MainVC.swift in Sources */,
+				55BAA9A71EFCA2F50085BEC4 /* CustomButton.swift in Sources */,
 				55BAA9771EF71C3F0085BEC4 /* AgesVC.swift in Sources */,
 				55BAA9981EF71C7B0085BEC4 /* WorldsVC.swift in Sources */,
 				55BAA9941EF71C7B0085BEC4 /* TableCells.swift in Sources */,

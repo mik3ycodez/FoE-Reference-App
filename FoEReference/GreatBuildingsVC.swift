@@ -52,6 +52,10 @@ class GreatBuildingsVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     //MARK: - Segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let backItem = UIBarButtonItem()
+        backItem.title = "Back"
+        navigationItem.backBarButtonItem = backItem
+        
         if let destination = segue.destination as? GBDetailsVC {
             
             
@@ -59,10 +63,6 @@ class GreatBuildingsVC: UIViewController, UITableViewDelegate, UITableViewDataSo
             destination.gbDetailIDs = gbIDs
             destination.gbDetailNames = gbNames
             destination.gbDetailAges = gbAges
-            
-            //            if let gbData = sender as?  {
-//                destination.greatBuilding = gb
-//            }
         }
     }
     

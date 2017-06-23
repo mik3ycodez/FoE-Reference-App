@@ -53,8 +53,8 @@ class MainVC: UITableViewController {
             print("SegueToGreatBuildingsVC")
             self.performSegue(withIdentifier: "SegueToGreatBuildingsVC", sender: self)
         case 4:
-            print("SegueToGBSnipingsVC")
-            //self.performSegue(withIdentifier: "SegueToGBSnipingsVC", sender: self)
+            print("SegueToGBSnipingVC")
+            self.performSegue(withIdentifier: "SegueToGBSnipingVC", sender: self)
         case 5:
             print("SeguesToGEsVC")
             //self.performSegue(withIdentifier: "SeguesToGEsVC", sender: self)
@@ -68,6 +68,12 @@ class MainVC: UITableViewController {
             print("Did not segue")
         }
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let backItem = UIBarButtonItem()
+        backItem.title = "Back"
+        navigationItem.backBarButtonItem = backItem
     }
     
     func getMainTableEntries() {
